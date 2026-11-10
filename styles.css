@@ -1,35 +1,50 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@600&display=swap');
+
 /* Основные стили */
 body {
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #f0f4f8;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.8;
+  transition: background-color 0.3s ease;
 }
 
 header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2em;
   color: #007bff;
-  font-size: 2.5em;
   margin: 0;
+  letter-spacing: 1px;
 }
 
 header p {
-  font-size: 1.2em;
-  color: #666;
+  font-size: 1.4em;
+  color: #444;
+  margin-top: 10px;
 }
 
 /* Услуги */
 .services {
   background-color: #eef;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 40px;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 60px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.services h2 {
+  font-size: 2em;
+  color: #007bff;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 
 .services ul {
@@ -38,57 +53,80 @@ header p {
 }
 
 .services li {
-  margin-bottom: 10px;
-  font-size: 1.1em;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  color: #333;
 }
 
 /* Примеры работ */
 .examples {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .gallery {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 25px;
   flex-wrap: wrap;
 }
 
 .gallery img {
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  border: 3px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 250px;
+  height: auto;
 }
 
 .gallery img:hover {
   transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Отзывы */
 .reviews {
   background-color: #f0f8ff;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 40px;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 60px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.reviews h2 {
+  font-size: 2em;
+  color: #007bff;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 
 .reviews p {
-  font-size: 1.1em;
-  margin: 10px 0;
+  font-size: 1.3em;
+  margin: 15px 0;
+  color: #333;
 }
 
 /* Контакты */
 .contacts {
   background-color: #fff3cd;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 40px;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 60px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.contacts h2 {
+  font-size: 2em;
+  color: #007bff;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 
 .contacts a {
   color: #007bff;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .contacts a:hover {
@@ -98,19 +136,23 @@ header p {
 /* Футер */
 footer {
   text-align: center;
-  font-size: 0.9em;
+  font-size: 1.1em;
   color: #777;
   margin-top: 60px;
 }
 
 /* Адаптивность */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.8em;
+  }
+
   .gallery img {
     width: 100%;
     height: auto;
   }
 
-  header h1 {
-    font-size: 2em;
+  .services h2, .reviews h2, .contacts h2 {
+    font-size: 1.6em;
   }
 }
