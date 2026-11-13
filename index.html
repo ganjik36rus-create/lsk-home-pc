@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lsk Home PC - Computer Repair & Maintenance</title>
+    <title>Lsk Home PC - Ремонт компьютеров и ноутбуков</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@300;400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -14,8 +14,10 @@
 
         body {
             font-family: 'Open Sans', sans-serif;
-            background-color: #0a0a0a;
-            color: #ffffff;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+            background-size: cover;
+            background-position: center;
+            color: white;
         }
 
         .hero {
@@ -23,120 +25,35 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                        url('https://images.unsplash.com/photo-1523678755134-281b66a386a8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .hero-content {
             text-align: center;
-            max-width: 800px;
-            padding: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         h1 {
             font-family: 'Space Mono', monospace;
             font-size: 3.5em;
             margin-bottom: 20px;
-            color: #00ff9d;
+            color: white;
         }
 
         h2 {
             font-family: 'Space Mono', monospace;
             font-size: 2.5em;
             margin-bottom: 30px;
-            color: #0096ff;
+            color: white;
         }
 
         .services {
             padding: 50px 20px;
-            background-color: #111111;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .service-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
         }
 
         .service-card {
-            background-color: #1a1a1a;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .service-card h3 {
-            font-family: 'Space Mono', monospace;
-            color: #00ff9d;
-            margin-bottom: 10px;
-        }
-
-        .contact {
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .btn {
-            background-color: #0096ff;
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            font-family: 'Space Mono', monospace;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #007aff;
-        }
-    </style>
-</head>
-<body>
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Lsk Home PC</h1>
-            <h2>Professional Computer Repair & Maintenance</h2>
-            <button class="btn">Call Us Now +7 908 133 87 06</button>
-        </div>
-    </section>
-
-    <section class="services">
-        <div class="service-grid">
-            <div class="service-card">
-                <h3>Computer Repair</h3>
-                <p>Professional diagnosis and repair of PC components.</p>
-            </div>
-            <div class="service-card">
-                <h3>Home PC Setup</h3>
-                <p>Custom-built PCs tailored to your needs.</p>
-            </div>
-            <div class="service-card">
-                <h3>Data Recovery</h3>
-                <p>Expert data recovery services from any storage device.</p>
-            </div>
-            <div class="service-card">
-                <h3>Game Console Repair</h3>
-                <p>Professional repair and maintenance for gaming consoles.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <p>Address: [Your Address]</p>
-        <p>Phone: +7 908 133 87 06</p>
-        <p>Email: [Your Email]</p>
-    </section>
-</body>
-</html>
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20
