@@ -2,138 +2,71 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lsk Home PC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЛСК ПК - Ремонт компьютеров и ноутбуков</title>
     <style>
-        body, html {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            height: 100%;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            overflow-x: hidden;
+            background-color: #f4f4f4;
         }
-
-        .background {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            background: url('https://images.unsplash.com/photo-1581090463632-688373398365?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
-            background-attachment: fixed;
-        }
-
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7));
-        }
-
-        .container {
-            position: relative;
-            z-index: 2;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
             padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .services {
+            margin-top: 30px;
             text-align: center;
         }
-
-        h1 {
-            font-size: 3.5em;
-            color: #fff;
-            text-shadow: 2px 2px 8px #000;
-            margin-bottom: 20px;
-            animation: fadeIn 1.5s ease-out;
-        }
-
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .service-item {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px 30px;
-            border-radius: 10px;
-            color: #fff;
-            font-size: 1.2em;
-            text-shadow: 1px 1px 4px #000;
-            animation: bounceIn 1.2s ease;
-        }
-
-        .cta-button {
+        .contact {
             margin-top: 40px;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            background: linear-gradient(45deg, #ff6f61, #f39c12);
+            text-align: center;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
             border: none;
-            color: #fff;
-            border-radius: 30px;
+            border-radius: 5px;
             cursor: pointer;
-            text-transform: uppercase;
-            box-shadow: 0 8px 15px rgba(0,0,0,0.3);
-            transition: all 0.3s ease;
         }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 20px rgba(0,0,0,0.4);
-        }
-
-        @keyframes fadeIn {
-            from {opacity: 0; transform: translateY(30px);}
-            to {opacity: 1; transform: translateY(0);}
-        }
-
-        @keyframes bounceIn {
-            0% {transform: scale(0.8);}
-            50% {transform: scale(1.05);}
-            100% {transform: scale(1);}
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5em;
-            }
-
-            .service-item {
-                font-size: 1em;
-                padding: 15px 25px;
-            } 
-            <!-- Контакты -->
-  <section class="contacts">
-    <div class="container">
-      <h2>Контакты</h2>
-      <p>📞 <a href="tel:89081338706">8 908 133 87 06</a></p>
-      <p>💻 
-        <a href="https://www.avito.ru/brands/59c3c413297617b7556759661009d65b" target="_blank" rel="noopener noreferrer">Авито</a> | 
-        <a href="https://vk.ru/lsk_home_pc" target="_blank" rel="noopener noreferrer">ВКонтакте</a>
-      </p>
-    </div>
-  </section>
-
+        button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <div class="background">
-        <div class="overlay"></div>
-        <div class="container">
-            <h1>Lsk Home PC</h1>
-            <div class="services">
-                <div class="service-item">Сборка</div>
-                <div class="service-item">Обслуживание компьютеров</div>
-                <div class="service-item">Обслуживание ноутбуков</div>
-                <div class="service-item">Обслуживание игровых консолей</div>
-            </div>
-            <button class="cta-button">Связаться с нами</button>
+    <header>
+        <h1>ЛСК ПК</h1>
+        <h2>Ремонт компьютеров, ноутбуков и игровых приставок</h2>
+    </header>
+    
+    <div class="container">
+        <div class="services">
+            <h2>Наши услуги:</h2>
+            <ul>
+                <li>Ремонт и обслуживание компьютеров</li>
+                <li>ремонт ноутбуков</li>
+                <li>ремонт игровых приставок</li>
+                <li>Сборка и настройка ПК под ваши задачи</li>
+                <li>Восстановление удаленных данных</li>
+                <li>Выезд по городу и району</li>
+            </ul>
+        </div>
+        
+        <div class="contact">
+            <h2>Контакты:</h2>
+            <p>Телефон: +7 908 133 87 06</p>
+            <p>Михаил</p>
+            <button>Связаться с нами</button>
         </div>
     </div>
 </body>
